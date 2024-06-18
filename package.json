@@ -1,0 +1,19 @@
+{
+  "name": "sneekcode-problem-service",
+  "version": "1.0.0",
+  "description": "problem managing service ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhirajbhakta24/SneekCode-Problem-Service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhirajbhakta24/SneekCode-Problem-Service/issues"
+  },
+  "homepage": "https://github.com/dhirajbhakta24/SneekCode-Problem-Service#readme"
+}
