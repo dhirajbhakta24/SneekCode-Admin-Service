@@ -4,6 +4,7 @@
   "description": "problem managing service ",
   "main": "index.js",
   "scripts": {
+    "dev": "npx nodemon src/index.js ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/dhirajbhakta24/SneekCode-Problem-Service/issues"
   },
-  "homepage": "https://github.com/dhirajbhakta24/SneekCode-Problem-Service#readme"
+  "homepage": "https://github.com/dhirajbhakta24/SneekCode-Problem-Service#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.3"
+  }
 }
