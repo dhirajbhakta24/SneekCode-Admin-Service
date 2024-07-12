@@ -27,7 +27,7 @@ const problemSchema = new mongoose.Schema({
 
     }],
     editorial:{
-
+            type : String
     }
 });
 
