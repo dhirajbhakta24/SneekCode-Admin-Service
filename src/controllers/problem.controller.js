@@ -18,7 +18,7 @@ async function addProblem(req,res,next){
             message:'Successfully created a new problem',
             error:{},
             data : newproblem
-        })
+        });
     } catch (error) { 
         next(error);
     }
@@ -33,10 +33,15 @@ function getProblem(req,res,next){
     }
 }
 
-function getProblems(req,res,next){
+async function getProblems(req,res,next){
     try {
-        //nothing implemented
-        throw new NotImplemented('addProblem');
+        const response = await problemService.getAllProblems();
+        return res.status(StatusCodes.OK).json({
+            success:true,
+            message:'Successfully fetched a new problem',
+            error:{},
+            data : response
+        })
     } catch (error) { 
         next(error);
     }
