@@ -1,3 +1,6 @@
+const errorHandler = require('./errorhandler');
+
 module.exports = {
-    markdownSanitizer : require('./markDownSanitizer')
+    markdownSanitizer : require('./markDownSanitizer'),
+    errorHandler : require('errorHandler')
 }
