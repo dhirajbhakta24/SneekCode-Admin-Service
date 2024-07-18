@@ -1,6 +1,6 @@
 const marked = require('marked');
 const sanitizeHtmlLibrary = require('sanitize-html');
-const turndown = require('turndown');
+const TurndownService = require('turndown');
 
 function sanitizeMarkdownContent(markdownContent){
     const turndownService =  new TurndownService();
@@ -11,7 +11,7 @@ function sanitizeMarkdownContent(markdownContent){
     const sanitizedHtml = sanitizeHtmlLibrary(convertedHtml,{
         allowedTags : sanitizeHtmlLibrary.defaults.allowedTags
     });
-    //3. convert tyhe sanitize html back to markdown
+    //3. convert the sanitize html back to markdown
     const sanitizedMarkdown = turndownService.turndown(sanitizedHtml);
 
     return sanitizedMarkdown;

@@ -15,6 +15,7 @@ class ProblemService {
         return problem;
     } catch (error) {
         console.log(error);
+        throw error;
     }
     }
 }
